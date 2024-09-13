@@ -1,0 +1,27 @@
+@import url(style.css);
+
+.contenedor {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr;
+
+  grid-template-areas: 
+  'header header'
+  'sidebar content';
+}
+
+.header {
+  grid-area: header;
+  background-color: #242424;
+}
+
+.sidebar {
+  grid: sidebar;
+  background-color: #515151;
+}
+
+.content {
+  grid: content;
+  background-color: #000;
+}
