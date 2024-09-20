@@ -1,0 +1,43 @@
+@import url(style.css);
+
+.grid-capas {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(4, 250px);
+  justify-content: center;
+}
+
+.item:nth-child(1) {
+  grid-row: 1/3;
+  grid-column: 1/3;
+  background-image: url(../imagenes/doraimon.jpg);
+  /* z-index: 1;
+  order: 1; */
+}
+
+.item:nth-child(2) {
+  grid-row: 1/3;
+  grid-column: 3/5;
+  background-image: url(../imagenes/alberto-instantaneo.jpg);
+}
+
+.item:nth-child(3) {
+  grid-row: 3/5;
+  grid-column: 1/3;
+  background-image: url(../imagenes/escudo-barcelona.jpg);
+}
+
+.item:nth-child(4) {
+  grid-row: 3/5;
+  grid-column: 3/5;
+  background-image: url(../imagenes/imagen-planeta-tierra.jpg);
+}
+
+.item:nth-child(5) {
+  grid-row: 2/4;
+  grid-column: 2/4;
+  background-image: url(../imagenes/escudo-green-lantern.jpg);
+  opacity: 0.7;
+}
